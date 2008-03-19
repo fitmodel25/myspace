@@ -1,4 +1,4 @@
-require '../myspace'
+require '../lib/myspace'
 require 'test/unit'
 
 class MySpaceTest < Test::Unit::TestCase
@@ -56,6 +56,7 @@ class MySpaceTest < Test::Unit::TestCase
     assert_equal("Single", my.status)
     assert_equal("Taurus", my.starsign)
     assert_equal("Someday", my.children)
+    assert_equal("Proffessional Lounger", my.occupation)
     assert_equal(false, my.smoke)
     assert_equal(true, my.drink)
   end

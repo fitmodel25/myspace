@@ -68,6 +68,10 @@ class MySpace
     (@hmodel/"//td[@id = 'ProfileHometown:']").first.innerHTML
   end
   
+  def occupation
+    (@hmodel/"//td[@id = 'ProfileOccupation:']/a").first.innerHTML
+  end
+  
   def smoke
     case (@hmodel/"//td[@id = 'ProfileSmoke / Drink:']").first.innerHTML.split[0]
     when "Yes"
