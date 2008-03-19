@@ -2,14 +2,14 @@ h1. MySpace Parser
 
 This library is a really simple parser built using the excellent Hpricot library for Ruby.
 
-I'm publishing it because people have asked me for it. Here. Have it. It's free software![1]
+I'm publishing it because people have asked me for it. Here. Have it. It's free software[1]!
 
 h2. How you can help
 
 * Extend it to support more of MySpace's terrible markup abominations
 * Write test cases[2] so we can make this thing not fail.
 
-fn1. It's licensed under the <a href="http://www.gnu.org/copyleft/gpl.html" rev="vote-for">GNU Public License</a>. You are free, but not free to make others unfree.[3]
+fn1. It's licensed under the <a href="http://www.gnu.org/copyleft/gpl.html" rev="vote-for">GNU Public License</a>. You are free, but not free to make others unfree[3].
 
 fn2. Yes, I know it's not really a unit test since it's having to poll the network. And, no, I don't really care.
 
