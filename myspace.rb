@@ -28,7 +28,7 @@ class MySpace
   end
   
   def age
-    (@hmodel/"//td[@class = 'text'][@width = '193']").first.innerHTML.split[7]
+    /([0-9]+) years old/.match((@hmodel/"//td[@class = 'text'][@width = '193']").first.innerHTML)[1]
   end
   
   def location
@@ -61,7 +61,11 @@ class MySpace
   end
 
   def education
-    (@hmodel/"//td[@id = 'ProfileEducation:]").first.innerHTML
+    (@hmodel/"//td[@id = 'ProfileEducation:']").first.innerHTML
+  end
+  
+  def hometown
+    (@hmodel/"//td[@id = 'ProfileHometown:']").first.innerHTML
   end
   
   def smoke
